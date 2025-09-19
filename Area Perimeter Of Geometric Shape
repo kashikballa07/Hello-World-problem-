@@ -1,0 +1,19 @@
+
+int main() {
+    float radius, side, length, width;
+    float circle_area, circle_perimeter;
+    float square_area, square_perimeter;
+    float rectangle_area, rectangle_perimeter;
+    const float pi = 3.1416;
+    scanf("%f", &radius);
+    scanf("%f", &side);
+    scanf("%f %f", &length, &width);
+    circle_area = pi * radius * radius;
+    circle_perimeter = 2 * pi * radius;
+    square_area = side * side;
+    square_perimeter = 4 * side;
+    rectangle_area = length * width;
+    rectangle_perimeter = 2 * (length + width);
+
+    
+return 0;}
