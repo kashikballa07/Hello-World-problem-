@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int N, Y, W, D;
+
+    scanf("%d", &N);
+
+    Y = N / 365;      
+    N = N % 365;  
+    
+    W = N / 7;        
+    D = N % 7;        
+
+    printf("Years: %d\n", Y);
+    printf("Weeks: %d\n", W);
+    printf("Days: %d\n", D);
+
+    return 0;
+}
