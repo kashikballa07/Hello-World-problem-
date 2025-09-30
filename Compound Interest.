@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    double P, R, CI, amount;
+    int T;
+
+    scanf("%lf %lf %d", &P, &R, &T);
+
+    amount = P * pow((1 + R / 100), T);
+
+    CI = amount - P;
+
+    printf("%.2f\n", CI);
+
+    return 0;
+}
