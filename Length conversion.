@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+ #include <stdio.h>
+
+int main() {
+    int cm;
+    double meters, kilometers;
+    scanf("%d", &cm);
+
+    meters = cm / 100.0;       
+    kilometers = cm / 100000.0; 
+
+    printf("%.2f %.2f\n", meters, kilometers);
+
+    return 0;
+}
