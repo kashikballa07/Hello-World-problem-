@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include<stdio.h>
+int main(){
+    float p,ch,b,m,c;
+    float per,total;
+
+    scanf("%f %f %f %f %f",&p,&ch,&b,&m,&c);
+
+    total=(p+ch+b+m+c);
+
+    per=(total/500)*100;
+
+        if(per>=90){
+            printf("Percentage = %.2f\n",per);
+            printf("Grade = A\n");
+        }
+         if(per>=80 && per<90){
+            printf("Percentage = %.2f\n",per);
+            printf("Grade = B\n");
+         }
+         if(per>=70 && per<80){
+            printf("Percentage = %.2f\n",per);
+            printf("Grade = C\n");
+         }
+         if(per>=60 && per<70){
+            printf("Percentage = %.2f\n",per);
+            printf("Grade = D\n");
+         }
+         if(per>=40 && per<60){
+            printf("Percentag e= %.2f\n",per);
+            printf("Grade = E\n");
+         }
+         else if(per<40){
+            printf("Grade = F\n");
+         }
+
+    return 0;
+}
