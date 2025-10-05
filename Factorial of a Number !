@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include<stdio.h>
+int main(){
+    int N,fact,i;
+
+    scanf("%d",&N);
+    fact=1;
+    for(i=1;i<=N;i++){
+        fact=fact*i;
+    }
+    printf("%d",fact);
+    return 0;
+}
