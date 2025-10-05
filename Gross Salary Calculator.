@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include<stdio.h>
+int main(){
+    float basic,hr,da,gross;
+
+    scanf("%f" ,&basic);
+
+    if(basic<=10000){
+        hr =0.20*basic;
+        da =0.30*basic;
+    }
+    else if(basic<=20000){
+        hr =0.25*basic;
+        da =0.40*basic;
+    }
+    else{
+        hr =0.30*basic;
+        da =0.50*basic;
+    }
+
+    gross = basic+hr+da;
+
+    printf("%.2f\n",gross);
+    
+    return 0;
+}
