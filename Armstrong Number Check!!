@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include<math.h>
+int main(){
+    int n,rem,digits=0;
+    double sum=0;
+
+    scanf("%d",&n);
+   
+
+    int num=n;
+    while(num!=0){
+        digits++;
+        num=num/10;
+    }
+    num=n;
+    while(num!=0){
+        rem=num%10;
+        sum+=pow(rem,digits);
+        num=num/10;
+    }
+
+    if ((int)sum == n)
+    printf("Armstrong");
+    else
+    printf("Not Armstrong");
+
+
+    return 0;
+}
