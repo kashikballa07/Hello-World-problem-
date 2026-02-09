@@ -1,0 +1,109 @@
+#include<stdio.h>
+#define MAX 100
+int list[MAX];
+int n=0;
+
+void insertAtBeg(int value){
+    if(n==MAX){
+        printf("List is Full !!\n");
+        return;
+    }
+    for(int i=n-1;i>=0;i--){
+        list[i+1]=list[i];
+    }
+    list[0]=value;
+    n++;
+    printf("Element Insrted ! ! !");
+}
+void insertAtEnd(int value){
+    if(n==MAX){
+        printf("List is full");
+        return ;
+    }
+    list[n]=value;
+    n++;
+    printf("ElementInserted ! ! !\n");
+    
+}
+void insertAtPoisition(int value ,int pos){
+    if(n==MAX){
+        printf("List is Full ");
+    }
+    else if(pos=0 || pos>=n){
+        printf("Invlid Poisition");
+        return ;
+    }
+
+    else{
+        for(int i=n-1;i>=pos;i--){
+        list[pos]=value;
+        }
+    n++;
+    printf("Element Inserted ! ! !\n");
+    }    
+}
+void displayList(){
+    if(n==0){
+        printf("LIst Is Empty ! ! !");
+        return;
+    }
+    for(int i=0;i<n;i++){
+        printf("%d\t",list[i]);
+    }
+    printf("\n");
+}
+int main(){
+   while(1){
+    printf("1. Insertion in Beginning :\n");
+    printf("2. Insert at End :\n");
+    printf("3. Insert at any poisition: \n");
+    printf("4. Delete from Beginning :\n");
+    printf("5. Delete from End :\n");
+    printf("6. Delete from At any Poisition :\n");
+    printf("7. Display List :\n");
+    printf("8. Search Element at list :\n ");
+    printf("9. Update Element at list :\n ");
+    printf("10. Sort Element at list :\n ");
+    printf("11. Exit :\n");
+
+    int choice,data;
+    printf("Enter Your Choice !!!");
+    scanf("%d",&choice);
+    switch(choice){
+        case 1:
+          printf("Enter Data:");
+          scanf("%d",&data);
+          insertAtBeg(data);
+        break;
+        case 2:
+          printf("Enter Data:");
+          scanf("%d",&data);
+          insertAtEnd(data);
+          break;
+        case 3:
+          break;
+        case 4:
+          break;
+        case 5:
+          break;
+        case 6:
+          break;
+        case 7:
+          displayList();
+          break;
+        case 8:
+          break;
+        case 9:
+          break;
+        case 10:
+          break;
+        case 11:
+          break;
+        default:
+        printf("Invali choice !!!");
+    }
+    printf("n\n");
+
+   }
+   return 0; 
+}
